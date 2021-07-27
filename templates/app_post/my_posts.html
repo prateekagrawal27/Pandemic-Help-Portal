@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block title %} My Posts  {% endblock %}
+
+{% block body_block %}
+
+  {% for post in user.post_author.all %}
+<h3>{{ post.post_title }}</h3>
+<h6>{{ post.publish_date }}</h6>
+
+<div class="row"></div>
+  <div class="col-sm-8">
+    <p>Contact : {{ post.phone_number }}</p>
+    <p>Adress: {{ post.Full_Adress }} </p>
+    <p>Details:{{ post.post_text| linebreaks}} </p>
+    <a href="{% url 'post:editpost'  pk=post.pk %}" class="btn btn-info btn-sm">Edit</a> 
+<a href="{% url 'post:deletepost'  pk=post.pk %}" class="btn btn-info btn-sm">Delete</a>
+  </div>
+<hr>
+
+<br><br>
+
+  {% endfor %}
+
+
+
+{% endblock %}

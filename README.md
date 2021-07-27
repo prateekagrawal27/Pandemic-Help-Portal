@@ -1,2 +1,2 @@
-# Pandemic-Book
-A social media application specially design for resources availability in a particular city during covid situation. 
+# Pandemic Help Portal
+A Dynamic web application specially designed to allow users to post about resources availability/requirement during pandemic. Users filter the posts by their city, or based on availability or requirement of resource. 

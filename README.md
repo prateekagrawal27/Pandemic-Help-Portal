@@ -1,2 +1,3 @@
-# Pandemic Help Portal
-A Dynamic web application specially designed to allow users to post about resources availability/requirement during pandemic. Users filter the posts by their city, or based on availability or requirement of resource. 
+# Social Media Platform
+* A social media platform designed to help people to find and provide resources during a pandemic.
+* It includes features like Post filters, User Authentication and CRUD operations.
